@@ -30,7 +30,7 @@ int main () {
     int soma;
     int menos;
     int multi;
-    int divisao;
+    float divisao;
 
      switch (operacao) {
      case 1: 
@@ -65,12 +65,11 @@ int main () {
     }
     else  if (operacao == 3)
     {
-        printf("Seu resultado da multiplicacao eh: %d\n", multi);
+        printf("Seu resultado da subtracao entre %d e %d eh: %d\n", n1, n2, multi);
     }
     else {
-
-        printf("Seu resultado da divisao entre %d e %d eh: %.2d\n", n1, n2, divisao);
+        printf("Seu resultado da divisao entre %d e %d eh: %.1f\n", n1, n2, divisao);
     }
 
-    printf("Muito obrigado por usar nosso sistema de operacoes!");
+    printf("Muito obrigado por usar minha calculadora!");
 }

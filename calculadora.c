@@ -46,7 +46,7 @@ int main () {
         if (n2 != 0) {
             divisao = n1 / n2;	
         } else {
-            printf("Erro: divisao por zero!\n");
+            printf("Erro: divisao por zero não existe!\n");
             return 1;
         }
         break;
@@ -67,12 +67,9 @@ int main () {
     {
         printf("Seu resultado da multiplicacao eh: %d\n", multi);
     }
-    else if (operacao == 4) {
+    else {
 
         printf("Seu resultado da divisao entre %d e %d eh: %.2d\n", n1, n2, divisao);
-
-        printf("Seu resultado da divisao entre %d e %d é: %.2d\n", n1, n2, divisao);
-
     }
 
     printf("Muito obrigado por usar nosso sistema de operacoes!");

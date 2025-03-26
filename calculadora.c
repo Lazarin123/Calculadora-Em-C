@@ -46,7 +46,7 @@ int main () {
         if (n2 != 0) {
             divisao = n1 / n2;	
         } else {
-            printf("Erro: divisao por zero não existe!\n");
+            printf("Erro: divisao por zero nao existe!\n");
             return 1;
         }
         break;

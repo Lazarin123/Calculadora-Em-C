@@ -12,8 +12,8 @@ int main () {
     printf("          \\__|_|__/                              \n");
     printf("\n\n");
 
-    int n1;
-    int n2;
+    float n1;
+    float n2;
 
     int operacao;
 
@@ -22,10 +22,10 @@ int main () {
     scanf("%d", &operacao);
 
     printf("Digite um numero: \n");
-    scanf("%d", &n1);
+    scanf("%f", &n1);
 
     printf("Digite outro numero: \n");
-    scanf("%d", &n2);
+    scanf("%f", &n2);
 
     int soma;
     int menos;
@@ -57,18 +57,18 @@ int main () {
 
     if (operacao == 1)
     {
-        printf("Seu resultado da soma entre %d e %d eh: %d\n", n1, n2, soma);
+        printf("Seu resultado da soma entre %.1f e %.1f eh: %d\n", n1, n2, soma);
     }
     else  if (operacao == 2)
     {
-        printf("Seu resultado da subtracao entre %d e %d eh: %d\n", n1, n2, menos);
+        printf("Seu resultado da subtracao entre %.1f e %.1f eh: %d\n", n1, n2, menos);
     }
     else  if (operacao == 3)
     {
-        printf("Seu resultado da subtracao entre %d e %d eh: %d\n", n1, n2, multi);
+        printf("Seu resultado da subtracao entre %.1f e %.1f eh: %d\n", n1, n2, multi);
     }
     else {
-        printf("Seu resultado da divisao entre %d e %d eh: %.1f\n", n1, n2, divisao);
+        printf("Seu resultado da divisao entre %.1f e %.1f eh: %.1f\n", n1, n2, divisao);
     }
 
     printf("Muito obrigado por usar minha calculadora!");

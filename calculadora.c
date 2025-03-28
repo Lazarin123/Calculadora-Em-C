@@ -6,7 +6,7 @@ int main () {
     printf("          P  /_\\  P                              \n");
     printf("         /_\\_|_|_/_\\                            \n");
     printf("     n_n | ||. .|| | n_n  Bem vindo(a)! Ao Meu primeiro \n");
-    printf("     |_|_|nnnn nnnn|_|_|     modelo de calculadora \n");
+    printf("     |_|_|nnnn nnnn|_|_|      modelo de calculadora \n");
     printf("    |\" \"|  |_|  |\" \"|                         \n");
     printf("    |_____| ' _ ' |_____|                         \n");
     printf("          \\__|_|__/                              \n");
@@ -65,7 +65,7 @@ int main () {
     }
     else  if (operacao == 3)
     {
-        printf("Seu resultado da subtracao entre %.1f e %.1f eh: %d\n", n1, n2, multi);
+        printf("Seu resultado da multiplicacao entre %.1f e %.1f eh: %d\n", n1, n2, multi);
     }
     else {
         printf("Seu resultado da divisao entre %.1f e %.1f eh: %.1f\n", n1, n2, divisao);

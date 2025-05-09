@@ -6,9 +6,15 @@
 Salve o código: Guarde o código-fonte da calculadora em um arquivo com a extensão .c (por exemplo, calculadora.c).</p>
 
 <h4>Compile o código: Abra o seu terminal ou prompt de comando, navegue até o diretório onde você salvou o arquivo e execute o seguinte comando para compilar:
-(gcc calculadora.c -o calculadora)
+
+```bash
+  (gcc calculadora.c -o calculadora)
+```  
 Execute a calculadora: Após a compilação ser concluída com sucesso, execute o programa com o comando:
+
+```bash
 (./calculadora)
+```
 (Em sistemas Windows, pode ser necessário usar calculadora.exe).</h4>
 
 <h2>💡 Como Usar</h2>

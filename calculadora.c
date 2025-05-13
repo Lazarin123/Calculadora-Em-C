@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <windows.h>
 
 int main () {
 
@@ -17,22 +19,28 @@ int main () {
 
     int operacao;
 
-    printf("(1) soma (2) subtracao (3) multiplicacao (4) divisao\n");
+    printf("Digite: 1 para soma\n");
+    printf("Digite: 2 para subtracao\n");
+    printf("Digite: 3 para multiplicacao\n");
+    printf("Digite: 4 para divisao\n");
+    printf("Digite: 5 para Sair\n");
     printf("Qual operacao deseja fazer? \n");
     scanf("%d", &operacao);
 
-    printf("Digite um numero: \n");
-    scanf("%f", &n1);
+    if (operacao == 5) {
+        exit(0);
+    } else {
+        printf("Digite o primeiro numero: \n");
+        scanf("%f", &n1);
 
-    printf("Digite outro numero: \n");
-    scanf("%f", &n2);
+        printf("Digite o segundo numero: \n");
+        scanf("%f", &n2);
+    }
 
-    int soma;
-    int menos;
-    int multi;
+    int soma, menos, multi;
     float divisao;
 
-     switch (operacao) {
+    switch (operacao) {
      case 1: 
         soma = n1 + n2;
      break;
@@ -54,17 +62,14 @@ int main () {
             printf("Operação Invalida!\n");
             return 1;
     }
-
-    if (operacao == 1)
-    {
+    
+    if (operacao == 1) {
         printf("Seu resultado da soma entre %.1f e %.1f eh: %d\n", n1, n2, soma);
     }
-    else  if (operacao == 2)
-    {
+    else  if (operacao == 2) {
         printf("Seu resultado da subtracao entre %.1f e %.1f eh: %d\n", n1, n2, menos);
     }
-    else  if (operacao == 3)
-    {
+    else  if (operacao == 3) {
         printf("Seu resultado da multiplicacao entre %.1f e %.1f eh: %d\n", n1, n2, multi);
     }
     else {

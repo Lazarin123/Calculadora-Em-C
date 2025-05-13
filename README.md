@@ -38,9 +38,6 @@ Tratamento de divisão por zero: A função de divisão inclui uma verificação
 Estrutura de repetição: Um loop do-while é utilizado para manter o menu sendo exibido até que o usuário escolha a opção de sair.<br>
 Estrutura de seleção: A instrução switch é usada para executar a função correspondente à operação escolhida pelo usuário.</p>
 
-<h2>📚 Bibliotecas Utilizadas</h2>
-stdio.h: Para operações de entrada e saída (como printf e scanf).
-
 <h2>🔮 Próximos Passos e Melhorias Futuras</h2>
 <p>Este é um projeto inicial de uma calculadora em C. No futuro, algumas melhorias podem ser implementadas, como:
 

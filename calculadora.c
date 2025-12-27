@@ -4,7 +4,14 @@
 
 int main () {
 
-    
+    printf("\n\n");
+    printf("          P  /_\\  P                              \n");
+    printf("         /_\\_|_|_/_\\                            \n");
+    printf("     n_n | ||. .|| | n_n  Bem vindo(a)! Ao Meu primeiro \n");
+    printf("     |_|_|nnnn nnnn|_|_|      modelo de calculadora \n");
+    printf("    |\" \"|  |_|  |\" \"|                         \n");
+    printf("    |_____| ' _ ' |_____|                         \n");
+    printf("          \\__|_|__/                              \n");
     printf("\n\n");
 
     float n1;

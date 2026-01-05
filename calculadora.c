@@ -1,80 +1,65 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <windows.h>
 
-int main () {
-
-    printf("\n\n");
-    printf("          P  /_\\  P                              \n");
-    printf("         /_\\_|_|_/_\\                            \n");
-    printf("     n_n | ||. .|| | n_n  Bem vindo(a)! Ao Meu primeiro \n");
-    printf("     |_|_|nnnn nnnn|_|_|      modelo de calculadora \n");
-    printf("    |\" \"|  |_|  |\" \"|                         \n");
-    printf("    |_____| ' _ ' |_____|                         \n");
-    printf("          \\__|_|__/                              \n");
-    printf("\n\n");
-
-    float n1;
-    float n2;
-
+int main() {
+    float n1, n2, resultado;
     int operacao;
 
-    printf("Digite: 1 para soma\n");
-    printf("Digite: 2 para subtracao\n");
-    printf("Digite: 3 para multiplicacao\n");
-    printf("Digite: 4 para divisao\n");
-    printf("Digite: 5 para Sair\n");
-    printf("Qual operacao deseja fazer? \n");
-    scanf("%d", &operacao);
+    // Cabeçalho estilizado
+    printf("\n  P  /_\\  P");
+    printf("\n /_\\_|_|_/_\\");
+    printf("\n n_n | ||. .|| | n_n  Bem-vindo(a)!");
+    printf("\n |_|_|nnnn nnnn|_|_|  Calculadora Otimizada");
+    printf("\n |\" \"|  |_|  |\" \"|");
+    printf("\n |_____| ' _ ' |_____|");
+    printf("\n       \\__|_|__/\n\n");
 
-    if (operacao == 5) {
-        exit(0);
-    } else {
-        printf("Digite o primeiro numero: \n");
-        scanf("%f", &n1);
+    do {
+        printf("--- Menu de Operacoes ---\n");
+        printf("1: Soma\n2: Subtracao\n3: Multiplicacao\n4: Divisao\n5: Sair\n");
+        printf("Escolha: ");
+        scanf("%d", &operacao);
 
-        printf("Digite o segundo numero: \n");
-        scanf("%f", &n2);
-    }
-
-    int soma, menos, multi;
-    float divisao;
-
-    switch (operacao) {
-     case 1: 
-        soma = n1 + n2;
-     break;
-     case 2: 
-        menos = n1 - n2;
-     break;
-     case 3: 
-        multi = n1 * n2;
-     break;
-     case 4: 
-        if (n2 != 0) {
-            divisao = n1 / n2;	
-        } else {
-            printf("Erro: divisao por zero nao existe!\n");
-            return 1;
+        if (operacao == 5) {
+            printf("\nSaindo... Ate logo!\n");
+            break; 
         }
-        break;
-        default:
-            printf("Operação Invalida!\n");
-            return 1;
-    }
-    
-    if (operacao == 1) {
-        printf("Seu resultado da soma entre %.1f e %.1f eh: %d\n", n1, n2, soma);
-    }
-    else  if (operacao == 2) {
-        printf("Seu resultado da subtracao entre %.1f e %.1f eh: %d\n", n1, n2, menos);
-    }
-    else  if (operacao == 3) {
-        printf("Seu resultado da multiplicacao entre %.1f e %.1f eh: %d\n", n1, n2, multi);
-    }
-    else {
-        printf("Seu resultado da divisao entre %.1f e %.1f eh: %.1f\n", n1, n2, divisao);
-    }
 
-    printf("Muito obrigado por usar minha calculadora!");
+        if (operacao < 1 || operacao > 5) {
+            printf("\nOpcao invalida! Tente novamente.\n\n");
+            continue;
+        }
+
+        printf("Digite o primeiro numero: ");
+        scanf("%f", &n1);
+        printf("Digite o segundo numero: ");
+        scanf("%f", &n2);
+
+        switch (operacao) {
+            case 1:
+                resultado = n1 + n2;
+                printf("\n>>> Resultado: %.2f + %.2f = %.2f\n", n1, n2, resultado);
+                break;
+            case 2:
+                resultado = n1 - n2;
+                printf("\n>>> Resultado: %.2f - %.2f = %.2f\n", n1, n2, resultado);
+                break;
+            case 3:
+                resultado = n1 * n2;
+                printf("\n>>> Resultado: %.2f * %.2f = %.2f\n", n1, n2, resultado);
+                break;
+            case 4:
+                if (n2 != 0) {
+                    resultado = n1 / n2;
+                    printf("\n>>> Resultado: %.2f / %.2f = %.2f\n", n1, n2, resultado);
+                } else {
+                    printf("\n[ERRO] Divisao por zero nao permitida!\n");
+                }
+                break;
+        }
+        printf("---------------------------\n\n");
+
+    } while (operacao != 5);
+
+    return 0;
 }

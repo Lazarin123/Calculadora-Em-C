@@ -5,7 +5,14 @@ int main() {
     float n1, n2, resultado;
     int operacao;
 
-   
+    // Cabeçalho estilizado
+    printf("\n  P  /_\\  P");
+    printf("\n /_\\_|_|_/_\\");
+    printf("\n n_n | ||. .|| | n_n  Bem-vindo(a)!");
+    printf("\n |_|_|nnnn nnnn|_|_|  Calculadora Otimizada");
+    printf("\n |\" \"|  |_|  |\" \"|");
+    printf("\n |_____| ' _ ' |_____|");
+    printf("\n       \\__|_|__/\n\n");
 
     do {
         printf("--- Menu de Operacoes ---\n");

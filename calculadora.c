@@ -16,12 +16,12 @@ int main() {
 
     do {
         printf("--- Menu de Operacoes ---\n");
-        printf("1: Soma\n2: Subtracao\n3: Multiplicacao\n4: Divisao\n5: Sair\n");
+        printf("1: Soma\n 2: Subtracao\n 3: Multiplicacao\n 4: Divisao\n 5: Sair\n");
         printf("Escolha: ");
         scanf("%d", &operacao);
 
         if (operacao == 5) {
-            printf("\nSaindo... Ate logo!\n");
+            printf("\n Saindo... Ate logo!\n");
             break; 
         }
 
